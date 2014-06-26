@@ -1,0 +1,24 @@
+{{!< default}}
+	
+	<div class="menu fr">
+		<ul>
+			{{#foreach posts}}
+
+				<li class="{{post-class}} font-song fr">
+					<div class="post-title fr"><a href="{{url}}">{{{title}}}</a></div>
+					<div class="post-date fr">{{date published_at format="YYYY/M/D"}}</div>
+					<div class="post-excerpt fr">{{excerpt characters="50"}}&#65049</div>
+				</li>
+
+			{{/foreach}}
+		</ul>
+	</div>
+	
+	<div class="clearfix"></div>
+
+</div>
+
+<div id="pag" class="fr">
+	<ul>
+	</ul>
+</div>
