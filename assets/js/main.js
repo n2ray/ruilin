@@ -127,7 +127,7 @@ $(document).ready(function()
 			
 			// Get menu's total width
 			$('.header .menu ul li').each(function(){
-				$(this).width($(this).find('.post-title').outerWidth(true)+$(this).find('.post-date').outerWidth(true)+$(this).find('.post-excerpt').outerWidth(true));
+				$(this).width($(this).find('.post-title').outerWidth(true)+$(this).find('.post-date').outerWidth(true)+$(this).find('.post-excerpt').outerWidth(true)+10);
 				menuWidth += $(this).outerWidth(true);
 			});
 			
